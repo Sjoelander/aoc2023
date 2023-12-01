@@ -61,5 +61,5 @@ SUM      DC    PL6'0'
 TRT_TABL DC    256X'00'
          ORG   TRT_TABL+C'1'
          DC    C'123456789'
-	     ORG   ,
+	        ORG   ,
          END
