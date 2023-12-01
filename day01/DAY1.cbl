@@ -3,7 +3,7 @@
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
          SPECIAL-NAMES. 
-         CLASS DIGITS IS '0123456789'. 
+         CLASS DIGITS IS '123456789'. 
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
            SELECT INPUT-FILE ASSIGN TO 'input.txt'
@@ -15,7 +15,6 @@
        WORKING-STORAGE SECTION.
        01 RECORD-LENGTH            PIC 9(4) BINARY.
        01 I                        PIC 9(4) BINARY.
-       01 NUMBER-NAMES             PIC 9(4) BINARY.
        01 LINE-DIGITS. 
          05 FIRST-DIGIT            PIC 9.
          05 LAST-DIGIT             PIC 9.
