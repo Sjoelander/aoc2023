@@ -1,7 +1,7 @@
 /*REXX*/
 file = "input.txt"
 
-numeric digits 31
+numeric digits 16
 
 line = linein(file)
 parse var line "seeds:" seeds 
