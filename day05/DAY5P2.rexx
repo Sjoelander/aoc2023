@@ -1,9 +1,10 @@
 /*REXX*/
 file = "input.txt"
 
-numeric digits 31
+numeric digits 16
 
 line = linein(file)
+say line
 parse var line "seeds:" seeds_str 
 j = 0
 do i = 1 to words(seeds_str) by 2 
@@ -11,8 +12,8 @@ do i = 1 to words(seeds_str) by 2
   seeds.j.start = word(seeds_str,i)
   seeds.j.range = word(seeds_str,i+1) 
 end
-
 seeds.0 = j
+
 
 do while lines(file) > 0 
     line = linein(file)
